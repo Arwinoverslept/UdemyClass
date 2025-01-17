@@ -1,6 +1,6 @@
 package Interface;
 
-public interface Student {
+public interface Student extends StudentParent{
 	
 	public static final String University = "MMSU";
 	

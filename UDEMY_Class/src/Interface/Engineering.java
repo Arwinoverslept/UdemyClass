@@ -17,5 +17,15 @@ public class Engineering implements Student{
 	public void getStandard() {
 		System.out.println("Status: Graduate");		
 	}
+	
+	public void getUni() {
+		System.out.println("University: "+Student.University);
+	}
+
+	@Override
+	public void getInterfaceName() {
+		System.out.println("");
+		
+	}
 
 }

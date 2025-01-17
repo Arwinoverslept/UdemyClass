@@ -7,8 +7,8 @@ public class x3 extends BMW{
 	public static void main(String[] args) {
 		BMW modelBmw = new BMW();
 		
-		System.out.println("Model name: " +name);
-		System.out.println("Brand is: " +BMW.name);
+//		System.out.println("Model name: " +name);
+//		System.out.println("Brand is: " +BMW.name);
 		System.out.println("Behavior is");
 		modelBmw.run();
 	}
