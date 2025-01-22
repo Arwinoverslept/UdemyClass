@@ -33,22 +33,22 @@ public class Test {
 }
 
 class Library {
-    private HashMap<String, Test> bookMap;           // For storing and retrieving books
-    private LinkedHashMap<String, Test> orderedMap; // For maintaining insertion order
+    private HashMap<String, Test> bookMap;
+    private LinkedHashMap<String, Test> orderedMap;
 
-    // Constructor
+    
     public Library() {
         bookMap = new HashMap<>();
         orderedMap = new LinkedHashMap<>();
     }
 
-    // Add a book to the library
+    
     public void addBook(Test book) {
         bookMap.put(book.getIsbn(), book);
         orderedMap.put(book.getIsbn(), book);
     }
 
-    // Retrieve a book by ISBN
+    
     public Test getBookByIsbn(String isbn) {
         return bookMap.get(isbn);
     }
@@ -61,7 +61,7 @@ class Library {
         }
     }
 
-    // Display all books sorted by title
+    
     public void displayBooksSortedByTitle() {
         System.out.println("Books sorted by title:");
         List<Test> bookList = new ArrayList<>(bookMap.values());
